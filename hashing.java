@@ -39,11 +39,9 @@ public class hashing {
 			System.out.println("\n=========================MAIN MENU====================");
 			System.out.println("Press 1 = Insert");
 			System.out.println("Press 2 = Search");
-			System.out.println("Press 3 = Delete");
-			System.out.println("Press 4 = Print Updated Table");
-			System.out.println("Press 5 = End");
+			System.out.println("Press 3 = End");
 			System.out.println();
-			System.out.print("Select from 1-5:  ");
+			System.out.print("Select from 1-3:  ");
                 selection = in.nextInt();
                 String searching;
 				switch (selection){
@@ -63,19 +61,7 @@ public class hashing {
 											System.out.println("\nSORRY, the Candidate Name is NOT in the hashtable");
 										}
 										break;
-								
 						case 3:
-							System.out.print("Number to Delete: ");
-							String del = in.next();
-							ht.remove(del);
-							System.out.println("\nUpdated table: " + ht);
-							break;
-						
-						case 4:
-						//PRINT
-							System.out.println(ht);
-							break;
-						case 5:
 							repeat = false;
 							System.out.print("Thank you for using this code. ;)");
 							break;
